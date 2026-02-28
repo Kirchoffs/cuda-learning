@@ -5,6 +5,10 @@
 >> ./outputs/main
 ```
 
+```
+>> mkdir -p outputs && nvcc -o outputs/main main.cu && ./outputs/main; rm -rf outputs
+```
+
 ## Basics
 ### Programming Model Perspective
 ```
