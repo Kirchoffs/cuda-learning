@@ -1,5 +1,6 @@
 # Notes
-## Run
+## Commands
+### Run
 ```
 >> nvcc -o outputs/main main.cu
 >> ./outputs/main
@@ -7,6 +8,18 @@
 
 ```
 >> mkdir -p outputs && nvcc -o outputs/main main.cu && ./outputs/main; rm -rf outputs
+```
+
+### Report
+```
+>> ncu -o ./outputs/report.rpt ./outputs/main
+or
+>> sudo $(which ncu) -o ./outputs/report.rpt ./outputs/main
+>> sudo `which ncu` -o ./outputs/report.rpt ./outputs/main
+```
+
+```
+>> ncu --import ./outputs/report.rpt.ncu-rep
 ```
 
 ## Basics
